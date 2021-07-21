@@ -28,7 +28,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run delet script
         run: |
-          git clone https://github.com/minttupyoneppo/granipo.git
           rm -rf granipo
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
