@@ -36,10 +36,10 @@ jobs:
           git commit -am "UpdateFile"
           git push origin main
 
-
-      - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker build . --file Dockerfile
+        run: |
+          git clone https://github.com/minttupyoneppo/granipo.git
+          docker build .
 
       - name: Run a multi-line script
         run: |
