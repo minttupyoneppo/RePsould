@@ -9,7 +9,6 @@ ADD /granipo /server2/
 
   #VOLUME /data/logs/  
 RUN ls
-RUN -c cd granipo
 #CMD java -jar /server2/3.0-SNAPSHOT-all.jar
 RUN java -jar 3.0-SNAPSHOT-all.jar
 
