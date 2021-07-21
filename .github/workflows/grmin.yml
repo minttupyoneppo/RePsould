@@ -36,8 +36,8 @@ jobs:
           git commit -am "UpdateFile"
           git push origin main
 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile
+     - name: Build the Docker image
+       run: docker build . --file Dockerfile
 
       - name: Run a multi-line script
         run: |
